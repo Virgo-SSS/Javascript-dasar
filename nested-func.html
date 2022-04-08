@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Nested</title>
+</head>
+<body>
+    <script>
+        //  nested function
+        function outer()
+        {
+            // function inner hanya bisa di panggil di dalam function outer
+            function inner()
+            {
+                document.writeln("Hallo");
+            }
+            
+            inner();
+        }
+
+        outer()
+        inner() // funct ini tidak bisa di panggil, karena di panggil di luar func outer
+        // jadi hanya bisa di akses dialam func outer
+        
+    </script>
+</body>
+</html>

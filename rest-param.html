@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter</title>
+</head>
+<body>
+    <script>
+        // rest param menandakan bahwa param tersebut dapat di isi banyak value, yg dimana nanti value tersebut 
+        // nanti akan di otomatis di ubah menjadi array
+        // dan perlu di ingat bahwa rest parameter harus berada di paling belakang
+
+
+        // bikin function
+        function hai(...nama) // titik 3 menandakan itu restp parameter
+        {
+            document.writeln("Hallo " + nama);
+        }
+
+        // panggil function
+        hai("virg", "leo", "stevanus");
+
+
+        // spread syntax
+        // jika sudah terlanjut parameter yg berupa array, kita dapat memasukan nya ke dalam rest parameter
+        // cara nya menggunakan tanda titik 3 di awal array
+        const arr = ["virg", "leo", "stevanus"];
+        hai(...arr); // spread syntax
+    </script>
+</body>
+</html>
