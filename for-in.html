@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR IN</title>
+</head>
+<body>
+    <script>
+        // jika ingin mengakses sebuah property di dalam object
+        // bisa menggunakn for in
+
+        const person = {
+            'name' : 'virgo',
+            'umur' : 20,
+            'address' : 'jakarta'
+        };
+
+        for (let key in person) {
+            document.writeln(key); // jika seperti ini maka yang di akses adalh index dari property tersebut
+            document.writeln("<br>");
+            document.writeln(`${key} : ${person[key]}`); // jika seperti ini maka yang di akses adalah index dan value nya 
+        }
+
+    </script>
+</body>
+</html>

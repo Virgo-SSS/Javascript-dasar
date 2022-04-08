@@ -8,15 +8,27 @@
 </head>
 <body>
     <script>
-        var fullName = "Virgo Stevanus";
-        var firstName = "kristina";
-        var lastName = "miranda";
+        // nah semenjak 2015, var sudah tidak direkomendasi kan kita gunakan var 
+        // skrng gunakan kata let atau const buat bikin variable
+       
+        /*
+            var fullName = "Virgo Stevanus";
+            var firstName = "kristina";
+            var lastName = "miranda";
+        */
 
+        let fullName = "Virgo Stevanus";
+        let firstName = "kristina";
+        let lastName = "miranda";
+
+        const dataTetap = "value const tidak bisa di ubah";
         document.writeln(fullName);
         document.writeln("<br>");
         document.writeln(firstName);
         document.writeln("<br>");
         document.writeln(lastName);
+        document.writeln("<br>");
+        document.writeln(dataTetap);
     </script>
 </body>
 </html>

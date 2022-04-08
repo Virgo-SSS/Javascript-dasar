@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+    <!-- switch statement hampir sama seperti if, hanya switch di gunakan untuk -->
+
+<script>
+    let nilai = "a";
+
+    // switch akan jalan terus menerus hingga ketemu break, ampir sama seperti  if else atau while
+    // jika nilai = true, maka akan menjalan case a terlebih dahulu, jika true maka akan menjalankan perintah
+    // di dalama case a, jika sudah selesai maka akan lanjut lagi ke case b, nah makanya itu di kasih break
+    // agar tidak jalan terus switch,
+    switch (nilai) {
+        case "a":
+            alert("nilai anda adalah a");
+            break;
+        case "b":
+            alert("nilai anda adalah b");
+            break;
+        case "c":
+            alert("nilai anda adalah c");
+            break;
+        default:
+            alert("nilai anda adalah lainnya");
+            break;
+    }
+</script>
+</body>
+</html>

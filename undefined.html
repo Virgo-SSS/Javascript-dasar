@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>undefined variable</title>
+</head>
+<body>
+    <!-- Undefined variable merupakan variable yang tidak mempunya fungsi ketika di buat -->
+
+    <script>
+        let nama; // variable nama yang tidak mempunya nilai di sebut undifined variable
+        let arr = ["virg", "leo", "stevanus"];
+        if (nama == undefined) {
+            alert("nama anda tidak ada");
+        } else {
+            alert("nama anda adalah " + nama);
+        }
+
+        if (arr[3] == undefined) { // jika array anda tidak mempunya index 3 maka akan menghasilkan undefined
+            alert("array anda tidak ada");
+        } else {
+            alert("array anda adalah " + arr[0]);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        // untuk memasukan data ke dalam array menggunaan .push()
+
+        /*
+        .push(value)  untuk menambahkan data ke dalam array
+        .length  untuk melihat panjang array
+        nama variable array[no index]  untuk mendapatkan data di array
+        nama variable array[no index] = value  untuk mengisi data di array
+        delete nama variable array[no index] untuk menghapus data di array
+        */
+        const name = [];
+
+        name.push("virgo stevanus");
+        name.push("sistem informasi");
+
+        panjang = name.length;
+
+        data = name[0];
+        data2 = name[0] = "kelvin";
+
+        delete name[1];
+        console.table(name);
+        document.write(data);
+        document.write("<br>");
+        document.write(data2);
+        document.write("<br>");
+        document.write(panjang);
+        document.write("<br>");
+        document.write(name);
+    </script>
+</body>
+
+</html>

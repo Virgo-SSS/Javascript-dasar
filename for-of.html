@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For OF</title>
+</head>
+<body>
+    <script>
+        // For of hanya bisa di gunakan untuk tipe data iterable, conoth nya array dan string
+        // For of tidak bisa di gunakan dalam tipe data seeperti object
+
+        const names = ["virgo", "sistem informasi", "kelvin"];
+        for (let name of names) {
+            document.write(name);
+            document.write("<br>");
+        } // nah disini dia ambil mengambil seluruh value dari array tersebut
+
+        const str = "sistem informasi";
+        for (let char of str) {
+            document.write(char);
+            document.write("<br>");
+        } // nah disini dia ambil mengambil seluruh value dari string tersebut
+
+
+        // ERROR
+        const person = {
+            'name' : 'virgo',
+            'umur' : 20,
+            'address' : 'jakarta'
+        };
+        for (let key of person) {
+            document.writeln(key);
+            document.writeln("<br>");
+            document.writeln(`${key} : ${person[key]}`);
+        } // nah disini akan terjadi error karena for of tidak bisa digunakan untuk object,
+        // silahkan cek console untuk melihat error nya
+
+
+    </script>
+</body>
+</html>
