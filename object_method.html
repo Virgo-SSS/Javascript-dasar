@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object method</title>
+</head>
+<body>
+    <script>
+        // object method adalah  di dalam sebuah object ada sebuah function
+
+        function sayHai(namess){
+            alert(`hello ${namess}`);
+        }
+        const names = {
+            nama: "virgo stevanus",
+            sayHello: function (name) {
+                alert(`hello ${name}`);
+            }
+            // sayHello: sayHai bisa seperti ini atau yg di atas
+        }
+
+        // names.sayHello("leo")
+        names.sayHello('leo');
+    </script>
+</body>
+</html>

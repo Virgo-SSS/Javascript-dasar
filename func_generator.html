@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function generator</title>
+</head>
+<body>
+    <script>
+        // function generator ada function yg di gunakan untuk membuat data generator
+        // data generator ada data yg dapat di iterasi seperti array
+        function* generateName(){
+            yield "virgo",  // gunakan yield untuk memasukan data 
+            yield "stevanus",
+            yield "leo"
+        }
+
+        const names = generateName();
+        for (let name of names){
+            document.write(name);
+        }
+
+    </script>
+</body>
+</html>
